@@ -9,7 +9,7 @@ tags:
 ---
 
 New
-- Renamed drom "Download Site PDF" to "Download Website PDF"
+- Renamed from "Download Site PDF" to "Download Website PDF"
 - Added clean conversion of blob and file urls
 - Storage of downloaded files moved to IndexedDB
 - Added more localizations

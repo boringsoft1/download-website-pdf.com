@@ -50,5 +50,5 @@ server {
 ```
 
 ```
-sudo certbot --nginx -d boringsoft.io -d www.boringsoft.io -d download-website-pdf.com -d www.download-website-pdf.com
+sudo certbot --nginx -d download-website-pdf.com -d www.download-website-pdf.com --force-renewal
 ```
