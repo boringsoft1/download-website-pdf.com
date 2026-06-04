@@ -1,0 +1,70 @@
+---
+layout: layout-post.njk
+title: Frequently Asked Questions
+permalink: /faq/
+date: 2026-06-04T12:00:00
+updated: 2026-06-04T12:00:00
+---
+
+
+## What is Download Website PDF?
+
+[Download Website PDF](https://chromewebstore.google.com/detail/download-website-pdf/lenhfepjchlbcejeemiccolkecighehb) is a Chrome extension that allows users to save web pages as PDF files directly from their browser.
+
+---
+
+## How do I save a website as PDF?
+
+1. Open the web page.
+2. Launch Download Website PDF.
+3. Start the PDF export process.
+4. Save the generated PDF file.
+
+---
+
+## Why not just use Chrome's built-in Save as PDF feature?
+
+Chrome's built-in PDF export works well for many pages.
+
+However, some websites contain dynamic content, complex layouts, or long documents that may not always export as expected.
+
+Different users may prefer different workflows depending on their requirements.
+
+---
+
+## Does the extension work on articles and documentation pages?
+
+Yes.
+
+The extension is intended to support a wide range of web content, including:
+
+* Blog posts
+* Documentation pages
+* Tutorials
+* Knowledge bases
+* Research material
+
+---
+
+## Can I use the exported PDF offline?
+
+Yes.
+
+Once saved, PDF files can be viewed without an internet connection.
+
+---
+
+## Is the extension free?
+
+Refer to the Chrome Web Store listing for current pricing and availability information.
+
+[https://chromewebstore.google.com/detail/download-website-pdf/lenhfepjchlbcejeemiccolkecighehb](https://chromewebstore.google.com/detail/download-website-pdf/lenhfepjchlbcejeemiccolkecighehb)
+
+---
+
+## Where can I learn more?
+
+- [Chrome Web Store](https://chromewebstore.google.com/detail/download-website-pdf/lenhfepjchlbcejeemiccolkecighehb)
+- [GitHub Repository](https://github.com/YOUR_GITHUB_USERNAME/download-website-pdf)
+- [Articles](/articles/)
+- [Changelog](/releases/)

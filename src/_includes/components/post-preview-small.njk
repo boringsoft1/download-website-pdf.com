@@ -1,0 +1,33 @@
+<article class="post-preview-small-card">
+
+  <div class="post-preview-content">
+
+    
+    {% if logo %}
+      <div class="post-preview-logo">
+          <img src="{{ logo | url }}" alt="">
+      </div>
+    {% endif %}
+    {% if not logo %}
+      <div class="post-preview-logo">
+        {% include "svg/logo-main.svg" %}
+      </div>
+    {% endif %}
+
+    <div class="post-preview-text">
+
+      <h3 class="text-ellipsis">
+        <a href="{{ url }}">{{ title }}...</a>
+      </h3>
+
+      <!--<p>{{ description }}</p>-->
+
+      <small>
+        {{ date | date("MMM DD, YYYY") }}
+      </small>
+
+    </div>
+
+  </div>
+
+</article>

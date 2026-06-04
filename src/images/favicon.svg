@@ -1,0 +1,13 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(16,16)">
+    <path d="M8 0 H64 L88 24 V96 H8 Z" fill="#E57363"/>
+<!--Fold-->
+    <path d="M64 0 V24 H88 Z" fill="#D45A4A"/>
+<!--PDF bar-->
+    <rect x="0" y="44" width="96" height="40" fill="#7a231b"/>
+<!--Text PDF-->
+    <text x="48" y="68" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="bold" text-anchor="middle" fill="white" dominant-baseline="middle">
+      PDF
+    </text>
+  </g>
+</svg>

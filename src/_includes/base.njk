@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ title }} - Download Website PDF</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/images/favicon.svg?v=2" type="image/svg+xml">
+  {# <link rel="icon" href="/images/favicon.ico?v=2" type="image/x-icon"> #}
+  <link rel="stylesheet" href="/css/palette.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/landing.css">
+  <link rel="stylesheet" href="/css/base/header.css">
+  <link rel="stylesheet" href="/css/base/footer.css">
+  <link rel="stylesheet" href="/css/post.css">
+  <link rel="stylesheet" href="/css/post-preview.css">
+  <link rel="stylesheet" href="/css/releases.css">
+  <script src="/js/theme-init.js"></script>
+</head>
+<body>
+    {% include "base/header.njk" %}
+    <main>
+        <div class="wrapper main-content">
+            {{ content | safe }}
+        </div>
+    </main>
+    {% include "base/footer.njk" %}
+    <script src="/js/theme-toggle.js"></script>
+    <script src="/js/analytics.js"></script>
+</body>
+</html>

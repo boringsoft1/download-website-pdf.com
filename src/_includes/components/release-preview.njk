@@ -1,0 +1,13 @@
+<article class="release-preview-small-card">
+  <div class="release-preview-content">
+    <div class="release-preview-text">
+      <h3 class="text-ellipsis">
+        <a href="{{ url }}">{{ title }}</a>
+      </h3>
+      <p>{{ content | safe }}</p>
+      <small>
+        {{ date | date("MMM DD, YYYY") }}
+      </small>
+    </div>
+  </div>
+</article>

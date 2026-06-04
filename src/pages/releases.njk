@@ -1,0 +1,39 @@
+---
+layout: base.njk
+title: Releases
+permalink: "/releases/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}"
+
+
+pagination:
+  data: collections.releases
+  size: 20
+  alias: releases
+---
+
+<div class="releases-page header-margin-top">
+    <h2>Releases</h2>
+    <div class="releases-previews-wrapper">
+        {% for post in releases %}
+            <div class="releases-previews card">
+                {% set title = post.data.title or null %}
+                {% set description = post.data.description or null %}
+                {% set date = post.date or null %}
+                {% set logo = post.data.logo or null %}
+                {% set banner = post.data.banner or null %}
+                {% set url = post.url or null %}
+                {% set content = post.templateContent or post.content or null %}
+                {% include "components/release-preview.njk" %}
+            </div>
+        {% endfor %}
+        <hr>
+            <div class="pagination">
+                {% if pagination.href.previous %}
+                    <a href="{{ pagination.href.previous }}">← Prev</a>
+                {% endif %}
+                <span>Page {{ pagination.pageNumber + 1 }} of {{ pagination.pages.length }}</span>
+                {% if pagination.href.next %}
+                    <a href="{{ pagination.href.next }}">Next →</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>

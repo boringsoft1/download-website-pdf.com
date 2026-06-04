@@ -1,0 +1,8 @@
+---
+layout: base.njk
+eleventyComputed:
+  title: "{{ collections.featuredPosts[0].data.title if collections.featuredPosts[0] else 'Home' }}"
+---
+
+
+{% include "landing.njk" %}

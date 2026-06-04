@@ -1,0 +1,63 @@
+# =========================
+# Build output
+# =========================
+/public/
+
+# =========================
+# Node.js
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# =========================
+# Environment
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Editor / IDE
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# Cache / temp
+# =========================
+.cache/
+.tmp/
+temp/
+
+# =========================
+# Logs
+# =========================
+logs/
+*.log
+
+# =========================
+# Eleventy (на всякий случай)
+# =========================
+.eleventy-cache/
+
+# =========================
+# Optional: lock files (оставь ОДИН менеджер)
+# =========================
+# Если используешь npm → ОСТАВЬ package-lock.json
+# Если yarn → оставь yarn.lock
+# Если pnpm → оставь pnpm-lock.yaml
+
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml

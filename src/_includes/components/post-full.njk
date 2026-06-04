@@ -1,0 +1,33 @@
+<div class="posts-wrapper header-margin-top">
+  <div class="featured-post-wrapper">
+    <article class="post-full">
+      {% if banner %}
+        <div class="post-banner">
+          <img src="{{ banner }}" alt="{{ title }}"></div>
+        {% endif %}
+        <div class="post-wrapper">
+          <div class="post-header">
+            {% if not banner %}
+              {% if logo %}
+                <div class="post-logo">
+                  <img src="{{ logo }}" alt="{{ title }}" />
+                </div>
+              {% endif %}
+            {% endif %}
+            <div class="post-title">
+              <h1>{{ title }}</h1>
+            </div>
+          </div>
+          <div class="post-content">
+            {% if description %}
+              <p>{{ description }}</p>
+            {% endif %}
+            {{ content | safe }}
+          </div>
+          <div class="post-meta">
+            <small>{{ date | date("MMM DD, YYYY") }}</small>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
