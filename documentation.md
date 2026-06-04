@@ -1,7 +1,6 @@
 ## Backlog
 
 - remove unnecessary files
-- add utm tags to all urls
 - add contacts page
 - add feedback page
 

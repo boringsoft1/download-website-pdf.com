@@ -9,7 +9,7 @@ updated: 2026-06-04T12:00:00
 
 ## What is Download Website PDF?
 
-[Download Website PDF](https://chromewebstore.google.com/detail/download-website-pdf/lenhfepjchlbcejeemiccolkecighehb) is a Chrome extension that allows users to save web pages as PDF files directly from their browser.
+[Download Website PDF](https://chromewebstore.google.com/detail/download-website-pdf/lenhfepjchlbcejeemiccolkecighehb?utm_source=download-site-pdf&utm_campaign=faq&utm_content=top) is a Chrome extension that allows users to save web pages as PDF files directly from their browser.
 
 ---
 
@@ -58,13 +58,13 @@ Once saved, PDF files can be viewed without an internet connection.
 
 Refer to the Chrome Web Store listing for current pricing and availability information.
 
-[https://chromewebstore.google.com/detail/download-website-pdf/lenhfepjchlbcejeemiccolkecighehb](https://chromewebstore.google.com/detail/download-website-pdf/lenhfepjchlbcejeemiccolkecighehb)
+[https://chromewebstore.google.com/detail/download-website-pdf/lenhfepjchlbcejeemiccolkecighehb](https://chromewebstore.google.com/detail/download-website-pdf/lenhfepjchlbcejeemiccolkecighehb?utm_source=download-site-pdf&utm_campaign=faq&utm_content=middle1)
 
 ---
 
 ## Where can I learn more?
 
-- [Chrome Web Store](https://chromewebstore.google.com/detail/download-website-pdf/lenhfepjchlbcejeemiccolkecighehb)
-- [GitHub Repository](https://github.com/YOUR_GITHUB_USERNAME/download-website-pdf)
+- [Chrome Web Store](https://chromewebstore.google.com/detail/download-website-pdf/lenhfepjchlbcejeemiccolkecighehb?utm_source=download-site-pdf&utm_campaign=faq&utm_content=bottom)
+- [GitHub Repository](https://github.com/boringsoft1/download-website-pdf.com?utm_source=download-site-pdf&utm_campaign=faq&utm_content=bottom)
 - [Articles](/articles/)
 - [Changelog](/releases/)
