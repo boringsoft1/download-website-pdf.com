@@ -1,6 +1,6 @@
 header {
   height: var(--header-height);
-  position: fixed;
+  position: absolute;
   top: 0px;
   background-color: var(--bg-header);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -31,6 +31,14 @@ header {
   letter-spacing: -0.5px;
   color: var(--text-header);
   flex-wrap: nowrap;
+  @media (max-width: 600px) {
+    font-size: 1.0rem;
+  }
+  @media (max-width: 300px) {
+    & span {
+      display: none;
+    }
+  }
 }
 
 .header-title-container {
@@ -58,6 +66,10 @@ header {
   overflow: hidden;
   align-items: center;
 
+  @media (max-width: 600px) {
+    display: none;
+  }
+
   & .header-nav-hide {
     @media (max-width: 600px) {
       display: none;
@@ -67,6 +79,7 @@ header {
   & a {
     color: var(--text-secondary);
     font-weight: bold;
+
     &:hover {
       text-decoration: none;
       color: var(--link-hover);

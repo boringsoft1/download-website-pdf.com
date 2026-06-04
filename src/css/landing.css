@@ -2,6 +2,10 @@
   font-family: 'Inter', sans-serif;
   font-size: 1.4rem;
 
+  @media (max-width: 600px) {
+    font-size: 1.0rem;
+  }
+
   & * {
     cursor: default;
   }
@@ -90,6 +94,7 @@
   flex-direction: column;
   align-items: center;
   padding-inline: var(--homepage-articles-gap);
+  padding-block: var(--homepage-articles-gap);
 
   &>h1,
   &>h2,

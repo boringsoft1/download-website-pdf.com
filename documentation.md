@@ -25,8 +25,14 @@ npm run build
 
 ### Deployment
 
+put publish contents into this folder
 ```
-sudo nano /etc/nginx/sites-available/download-website-pdf.io
+sudo mkdir -p /var/www/download-website-pdf.com
+```
+
+create nginx config
+```
+sudo nano /etc/nginx/sites-available/download-website-pdf.com
 ```
 
 
@@ -34,7 +40,7 @@ sudo nano /etc/nginx/sites-available/download-website-pdf.io
 server {
     server_name download-website-pdf.com www.download-website-pdf.com;
 
-    root /var/www/download-website-pdf.io;
+    root /var/www/download-website-pdf.com;
     index index.html;
 
     location / {

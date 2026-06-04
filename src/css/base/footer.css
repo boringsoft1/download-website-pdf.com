@@ -13,6 +13,7 @@ footer {
 .footer-content {
   display: flex;
   flex-direction: row;
+  gap: var(--homepage-articles-gap);
   flex: 1;
   height: 100%;
   align-items: center;
@@ -22,7 +23,8 @@ footer {
 .footer-navigation-wrapper {
   display: flex;
   flex-direction: row;
-  gap: var(--homepage-articles-gap)
+  gap: var(--homepage-articles-gap);
+  flex-wrap: wrap; 
 }
 
 .footer-navigation-section {
