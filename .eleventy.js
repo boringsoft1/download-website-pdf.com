@@ -33,6 +33,9 @@ module.exports = function (eleventyConfig) {
     return format.replace(/YYYY|MMM|MM|DD|HH|mm|ss|T|Z/g, (token) => map[token]);
   });
 
+  eleventyConfig.addShortcode("version", function() {
+    return String(Date.now());
+  });
 
   eleventyConfig.addCollection("posts", function (collectionApi) {
     return collectionApi.getFilteredByTag("post")
