@@ -16,7 +16,6 @@ footer {
   gap: var(--homepage-articles-gap);
   flex: 1;
   height: 100%;
-  align-items: center;
   justify-content: space-between;
 }
 

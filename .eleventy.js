@@ -70,6 +70,14 @@ module.exports = function (eleventyConfig) {
         const slug = data.slug || data.page.fileSlug;
         return `/posts/${slug}/`;
       }
+      if (data.tags?.includes("article")) {
+        const slug = data.slug || data.page.fileSlug;
+        return `/articles/${slug}/`;
+      }
+      if (data.tags?.includes("release")) {
+        const slug = data.slug || data.page.fileSlug;
+        return `/releases/${slug}/`;
+      }
       return data.permalink;
     }
   });

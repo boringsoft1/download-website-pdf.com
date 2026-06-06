@@ -34,7 +34,7 @@ header {
   @media (max-width: 600px) {
     font-size: 1.0rem;
   }
-  @media (max-width: 300px) {
+  @media (max-width: 400px) {
     & span {
       display: none;
     }
@@ -65,9 +65,11 @@ header {
   flex-wrap: nowrap;
   overflow: hidden;
   align-items: center;
+  font-size: 1rem;
 
   @media (max-width: 600px) {
-    display: none;
+  font-size: 0.8rem;
+    /* display: none; */
   }
 
   & .header-nav-hide {

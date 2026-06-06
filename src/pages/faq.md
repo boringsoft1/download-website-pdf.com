@@ -58,7 +58,7 @@ Once saved, PDF files can be viewed without an internet connection.
 
 Refer to the Chrome Web Store listing for current pricing and availability information.
 
-[https://chromewebstore.google.com/detail/download-website-pdf/lenhfepjchlbcejeemiccolkecighehb](https://chromewebstore.google.com/detail/download-website-pdf/lenhfepjchlbcejeemiccolkecighehb?utm_source=download-site-pdf&utm_campaign=faq&utm_content=middle1)
+- [Downlaod Website PDF](https://chromewebstore.google.com/detail/download-website-pdf/lenhfepjchlbcejeemiccolkecighehb?utm_source=download-site-pdf&utm_campaign=faq&utm_content=middle1)
 
 ---
 

@@ -11,7 +11,7 @@ pagination:
 ---
 
 <div class="releases-page header-margin-top">
-    <h2>Releases</h2>
+    <h2>Changelog</h2>
     <div class="releases-previews-wrapper">
         {% for post in releases %}
             <div class="releases-previews card">
@@ -25,15 +25,15 @@ pagination:
                 {% include "components/release-preview.njk" %}
             </div>
         {% endfor %}
-        <hr>
-            <div class="pagination">
-                {% if pagination.href.previous %}
-                    <a href="{{ pagination.href.previous }}">← Prev</a>
-                {% endif %}
-                <span>Page {{ pagination.pageNumber + 1 }} of {{ pagination.pages.length }}</span>
-                {% if pagination.href.next %}
-                    <a href="{{ pagination.href.next }}">Next →</a>
-                {% endif %}
-            </div>
-        </div>
     </div>
+    <hr/>
+    <div class="pagination">
+        {% if pagination.href.previous %}
+            <a href="{{ pagination.href.previous }}">← Prev</a>
+        {% endif %}
+        <span>Page {{ pagination.pageNumber + 1 }} of {{ pagination.pages.length }}</span>
+        {% if pagination.href.next %}
+            <a href="{{ pagination.href.next }}">Next →</a>
+        {% endif %}
+    </div>
+</div>
