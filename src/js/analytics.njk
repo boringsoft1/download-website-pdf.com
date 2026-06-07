@@ -1,8 +1,10 @@
+---
+permalink: /js/analytics.js
+eleventyExcludeFromCollections: true
+---
 (() => {
-    const API_URL = 'https://ext.api.boringsoft.io/api/data/event';
-
-    const EXT_ID = 's2_dwnldwspdf';
-    // const EXT_ID = 'TEST_boringsoft-io';
+    const API_URL = '{% env "ANALYTICS_API_URL" %}';
+    const EXT_ID = '{% env "ANALYTICS_API_ID" %}';
 
     function isDevelopment() {
         const host = window.location.hostname;

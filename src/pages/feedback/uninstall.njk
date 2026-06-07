@@ -1,0 +1,63 @@
+---
+permalink: /feedback/uninstall/
+layout: null
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="4; url={% env "GOOGLE_FEEDBACK_FORM_URL" %}">
+    <style>
+        body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; color: #666; }
+    </style>
+</head>
+<body>
+    <div id="status" style="text-align: center;">
+        <h1>Just a moment...</h1>
+        <p>We are redirecting you to the feedback form.</p>
+        <p style="font-size: 0.9em; color: #999;">It will take only a second.</p>
+    </div>
+    <script>
+        const GOOGLE_FORM_URL = '{% env "GOOGLE_FEEDBACK_FORM_URL" %}';
+        const API_URL = '{% env "ANALYTICS_API_URL" %}';
+        const EXT_ID_KEY = 'ext_id';
+        async function trackAndRedirect() {        
+            const urlParams = new URLSearchParams(window.location.search);
+            const extIdFromUrl = urlParams.get(EXT_ID_KEY) || '';
+            const queryPayload = {};
+                urlParams.forEach((value, key) => {
+                    if (key !== EXT_ID_KEY) {
+                        queryPayload[key] = value;
+                    }
+                });
+            const referrer = document.referrer || 'direct';
+            const finalPayload = {
+                ...queryPayload,
+                eventType: 'uninstall-extension',
+                timestamp: new Date().toISOString(),
+                sysLang: navigator.language,
+                payload: referrer
+            };
+            try {
+                await fetch(API_URL, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${extIdFromUrl}`,
+                    },
+                    body: JSON.stringify(finalPayload),
+                    keepalive: true,
+                    mode: 'cors' 
+                }).catch(e => console.warn(e));
+            } catch (e) {
+                console.error('[Analytics] Failed', e);
+            } finally {
+                window.location.replace(GOOGLE_FORM_URL);
+            }
+        }
+        trackAndRedirect();
+    </script>
+</body>
+</html>

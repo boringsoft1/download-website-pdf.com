@@ -1,8 +1,40 @@
 
+const fs = require("fs");
+const path = require("path");
 const markdownIt = require("markdown-it");
 
+function loadEnv() {
+  const env = {};
+  const envPath = path.join(__dirname, ".env");
+  try {
+    if (fs.existsSync(envPath)) {
+      const envContent = fs.readFileSync(envPath, "utf-8");
+      envContent.split(/\r?\n/).forEach(line => {
+        const trimmed = line.trim();
+        if (!trimmed || trimmed.startsWith("#")) return;
+        const firstEqual = trimmed.indexOf("=");
+        if (firstEqual > 0) {
+          const key = trimmed.substring(0, firstEqual).trim();
+          let value = trimmed.substring(firstEqual + 1).trim();
+          if ((value.startsWith('"') && value.endsWith('"'))
+            || (value.startsWith("'") && value.endsWith("'"))) {
+            value = value.slice(1, -1);
+          }
+
+          env[key] = value;
+        }
+      });
+    }
+  } catch (error) {
+    console.error(".env:", error);
+  }
+
+  return env;
+}
+const env = loadEnv();
+
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("src/js");
+  eleventyConfig.addPassthroughCopy("src/js/**/*.js");
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/images");
   eleventyConfig.addPassthroughCopy("src/robots.txt");
@@ -33,7 +65,10 @@ module.exports = function (eleventyConfig) {
     return format.replace(/YYYY|MMM|MM|DD|HH|mm|ss|T|Z/g, (token) => map[token]);
   });
 
-  eleventyConfig.addShortcode("version", function() {
+  eleventyConfig.addShortcode("env", function(key) {
+    return env[key] || "";
+  });
+  eleventyConfig.addShortcode("version", function () {
     return String(Date.now());
   });
 

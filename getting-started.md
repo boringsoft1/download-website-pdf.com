@@ -13,6 +13,13 @@ npm -i
 
 ### Startup
 
+Add `.env` file to project root
+```
+ANALYTICS_API_URL=...
+ANALYTICS_API_ID=...
+GOOGLE_FEEDBACK_FORM_URL=...
+```
+
 start
 ```
 npm run start
