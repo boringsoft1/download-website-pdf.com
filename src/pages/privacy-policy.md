@@ -10,7 +10,7 @@ updated: 2026-06-04T12:00:00
 
 # Privacy Policy for "Download Website PDF"
 
-Effective date: 04.06.2026
+Effective date: 13.06.2026
 
 ## 1. Overview
 
@@ -90,7 +90,7 @@ This Privacy Policy may be updated from time to time. Updates will be reflected 
 
 If you have any questions about this Privacy Policy, you can contact  
 Developer: Agibalov Dmitrii  
-Email: agibalovdmitriy1@gmail.com  
+Email: info@boringsoft.io 
 
 ## 11. Compliance
 

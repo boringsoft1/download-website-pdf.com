@@ -1,5 +1,6 @@
 ## Backlog
 
+- move styles from layout to required_css tag
 - remove unnecessary files
 - add contacts page
 - add feedback page

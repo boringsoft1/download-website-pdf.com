@@ -14,6 +14,11 @@
   <link rel="stylesheet" href="/css/post.css?v={% version %}">
   <link rel="stylesheet" href="/css/post-preview.css?v={% version %}">
   <link rel="stylesheet" href="/css/releases.css?v={% version %}">
+  {% if required_css %}
+    {% for css_file in required_css %}
+      <link rel="stylesheet" href="{{ css_file }}?v={% version %}">
+    {% endfor %}
+  {% endif %}
   <script src="/js/theme-init.js?v={% version %}"></script>
 </head>
 <body>
