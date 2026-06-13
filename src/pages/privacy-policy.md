@@ -27,11 +27,11 @@ This may include:
 - Browser language (navigator.language)
 - Selected extension language
 - Current page domain (e.g., example.com)
-- Truncated page path without query parameters (e.g., /article/123). Query parameters (such as ?id=..., ?email=..., or tracking tokens) are explicitly removed before any data is sent.
 - Viewport size (width and height)
 - Interaction events (e.g., button clicks, onboarding steps, download actions)
 
-We intentionally exclude URL query parameters to prevent accidental collection of sensitive or personal information.  
+The extension may collect the domain name of the webpage where PDF generation was initiated (for example, example.com).
+The full URL, page path, query parameters, page content, form inputs, and user-generated content are never collected or transmitted.
 The extension does not track user activity across different websites.  
 This data cannot be used to identify you personally.  
 
@@ -48,7 +48,6 @@ Data is collected only when the user interacts with the extension (e.g., clickin
 ## 4. Data Storage
 
 - Data is transmitted securely to our servers:
-  - https://ext.api.boringsoft.io
   - https://analytics.download-website-pdf.com
 - All data is transmitted over secure HTTPS connections.
 - Data is stored in aggregated and anonymized form
@@ -60,7 +59,7 @@ Data is collected only when the user interacts with the extension (e.g., clickin
 We explicitly do not collect:
 - Names
 - Email addresses
-- IP addresses are not stored, tracked, or associated with user identities.
+- The extension does not intentionally collect or store IP addresses as part of its analytics data
 - Exact location
 - Browsing history across sites
 - Page content
